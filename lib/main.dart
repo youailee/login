@@ -65,6 +65,13 @@ const textStyle14White = TextStyle(
     height: 1
 );
 
+const textStyle17White = TextStyle(
+    fontSize: 17,
+    color: Colors.white,
+    fontWeight: FontWeight.w500,
+    height: 1
+);
+
 void main() {
   runApp(const MyApp());
 }
@@ -272,18 +279,18 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('Temperature',style: textStyle16grey,),
+                            Text('Humidity',style: textStyle16grey,),
                             SizedBox(height: 2,),
                             Container(
                               height: 29,
                               child: Row(
                                 children: [
-                                  Text('24',style: textStyle24White,),
+                                  Text('80',style: textStyle24White,),
                                   Container(
                                     height: 29,
-                                    padding: EdgeInsets.only(top: 2.5,left: 2),
+                                    padding: EdgeInsets.only(top: 4,left: 2),
                                     alignment: Alignment.topLeft,
-                                    child: Text('\u2103',style: textStyle16White,),
+                                    child: Text('%',style: textStyle17White,),
                                   )
                                 ],
                               ),
@@ -296,18 +303,18 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('Rainfall',style: textStyle16grey,),
+                            Text('Airflow',style: textStyle16grey,),
                             SizedBox(height: 2,),
                             Container(
                               height: 29,
                               child: Row(
                                 children: [
-                                  Text('0.5',style: textStyle24White,),
+                                  Text('3-4',style: textStyle24White,),
                                   Container(
                                     height: 29,
-                                    padding: EdgeInsets.only(left: 2,top: 0.5),
+                                    padding: EdgeInsets.only(left: 2,top: 3),
                                     alignment: Alignment.topLeft,
-                                    child: Text('mm',style: textStyle15White,),
+                                    child: Text('Levle',style: textStyle14White,),
                                   )
                                 ],
                               ),
@@ -320,18 +327,18 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('Brightness',style: textStyle16grey,),
+                            Text('Pressure',style: textStyle16grey,),
                             SizedBox(height: 2,),
                             Container(
                               height: 29,
                               child: Row(
                                 children: [
-                                  Text('200',style: textStyle24White,),
+                                  Text('101',style: textStyle24White,),
                                   Container(
                                     height: 29,
-                                    padding: EdgeInsets.only(top: 3.5,left: 2),
+                                    padding: EdgeInsets.only(top: 4,left: 2),
                                     alignment: Alignment.topLeft,
-                                    child: Text('Lx',style: textStyle14White,),
+                                    child: Text('KPA',style: textStyle14White,),
                                   )
                                 ],
                               ),
